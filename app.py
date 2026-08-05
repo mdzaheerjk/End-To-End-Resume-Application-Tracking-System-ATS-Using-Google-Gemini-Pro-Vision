@@ -18,7 +18,7 @@ api_key = st.sidebar.text_input(
 
 def get_gemini_response(client, prompt, pdf_file, job_description):
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.6-flash",
         contents=[
             prompt,
             job_description,
